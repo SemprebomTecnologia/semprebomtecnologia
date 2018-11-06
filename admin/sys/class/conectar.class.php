@@ -24,7 +24,7 @@
             if (file_exists($filename)) {
                 include_once($filename);  
             } else {
-                echo "The file $filename does not exist";
+                echo "The file $filename does not exist <br>";
                 echo '<br>'.$pasta;
             }
             

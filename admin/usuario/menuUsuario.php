@@ -28,109 +28,61 @@
             </ul>
         </div>  
     </div>
-        <div class="content" >
-            <div class="container-fluid" >
-                <div class="row" >
-                    <div class="col-lg-10" style="float: none; margin: 0 auto;padding-left: 12%;" >
-                        <div class="card">
-                            <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar perfil do usuario</h4>
-                                <p class="card-category">Cadastrar Usuario para uso do sistema</p>
-                            </div>
-                            <div class="card-body">
-                                <form name="FrmcadastroUsuario" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Empresa</label>
-                                                <input type="text" class="form-control" >
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Nome</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">sobrenome</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">                                    
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Confirme o Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Endere&ccedil;o</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Telefone</label>
-                                                <input type="tel" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                               
+    
 
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Cidade</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                
-                                                <select class="form-control selectpicker" id="selectEstado">
-                                                    <option selected value=""> SELECIONE UM ESTADO</option>
-                                                    <option value="PR" >PR</option>
-                                                    <option value="SC" >SC</option>
-                                                    <option value="CE" >CE</option>
-                                                    <option value="RJ" >RJ</option>
-                                                    <option value="RS" >RS</option>                                                    
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">CEP</label>
-                                                <input type="number" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    
-                                    <button type="submit" class="btn btn-warning pull-left">Inserir</button>
-                                    <button type="reset"  class="btn btn-warning pull-right">Cancelar</button>
-                                    <div class="clearfix"></div>
-                                </form>
-                            </div>
+<div class="content" >
+        <div class="container-fluid" >
+            <div class="row" >
+                <div class="col-lg-10" style="float: none; margin: 0 auto;padding-left: 12%;" >
+    
+                    <div class="card">
+                        <div class="card-header card-header-warning">
+                            <h4 class="card-title ">Lista de Produtos</h4>
+                            <p class="card-category">Lista de produtos cadastrados no Sistemas</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Nome
+                                    </th>
+                                    <th>
+                                        Login
+                                    </th>
+                                    <th>
+                                        Op&ccedil;&atilde;o                                                                    
+                                    </th>
+                                    </thead>                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>
+                                               bolsonaro
+                                            </td>
+                                            <td>
+                                                bolsonaro2019
+                                            </td>
+                                           
+                                            <td>
+                                                <a href="../admin.php?prdutoid=12&codbarra=12312" class="simple-text">Editar </a>
+
+                                                <a href="../admin.php?prdutoid=12&codbarra=12312" class="simple-text">Excluir </a>    
+                                            </td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>                                
+                               <button type="submit"  class="btn btn-warning pull-right">Novo</button>                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>

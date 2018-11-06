@@ -30,8 +30,8 @@ color: #000;
  
   <?php
   
-    include_once './menuUsuario.php';
-     //include_once './conteudoUsuario.php';
+    //include_once './menuUsuario.php';
+    include_once './FormUsuario.php';
     
   
   ?>
