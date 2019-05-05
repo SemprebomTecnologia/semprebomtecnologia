@@ -1,0 +1,8 @@
+{
+    "name": "site/",
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "catfan/medoo": "^1.6"
+        
+    }
+}
