@@ -39,7 +39,7 @@ $DB = new Medoo\Medoo([
 	'password' => DB_PASSWORD,
 ]);
 
-
+  
 
 
 ?>
