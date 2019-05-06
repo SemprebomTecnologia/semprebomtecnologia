@@ -6,11 +6,9 @@
 
 // Set region of time
 date_default_timezone_set('America/Sao_Paulo');
-
 // Se você instalou via compositor, apenas use este código para requerer o autoloader no topo de seus projetos.
-require 'vendor/autoload.php' ; 
+require '../../vendor/autoload.php' ; 
 //require 'Medoo.php' ;  
-
 
 
 //exit('medoo')
