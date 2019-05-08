@@ -7,14 +7,16 @@ error_reporting( error_reporting() & ~E_NOTICE );
 
  echo "<pre>";
  var_dump($_POST);
- exit('teste');
+ //exit('teste');
 
-if (isset($_POST['username']) && $_POST['username'] == 'admin')  {        
+if (isset($_POST['username']) && $_POST['username'] != null)  {        
     session_start();
     $_SESSION['username'] = $_POST['usernname'];        
-    header('Location: dashboard.html');
+    //header('Location: dashboard.html');
+    return 'oK';
 }else{
-    header('Location: index.php');
+    //header('Location: index.php');
+    return 'false';
 }
 
 

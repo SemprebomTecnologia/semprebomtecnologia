@@ -10,7 +10,10 @@ if (isset($_GET['login']) && $_GET['login'] == 'freire')  {
     $_SESSION['user'] = $_GET['login'];    
     session_start();
     header('Location: dashboard.html');
-} 
+}else{
+    //redireciona a pagina para a tela de login
+    header('Location: login.html');
+}
 
 
 

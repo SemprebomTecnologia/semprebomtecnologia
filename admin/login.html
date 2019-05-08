@@ -28,7 +28,7 @@
               <div class="brand-logo">
                 <img src="images/logo.svg" alt="logo">
               </div>
-              <form class="pt-3">
+              <form name="loginform" onsubmit="return verificaLogin();"  method="GET" class="pt-3">
                 <div class="form-group">
                   <label for="exampleInputEmail">Nome de Usuario</label>
                   <div class="input-group">
@@ -37,7 +37,7 @@
                         <i class="mdi mdi-account-outline text-primary"></i>
                       </span>
                     </div>
-                    <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Usuario">
+                    <input type="text" name="usr" class="form-control form-control-lg border-left-0" id="exampleInputEmail" placeholder="Usuario">
                   </div>
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
                         <i class="mdi mdi-lock-outline text-primary"></i>
                       </span>
                     </div>
-                    <input type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Senha">                        
+                    <input type="password" name="pword" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Senha">                        
                   </div>
                 </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
@@ -61,7 +61,7 @@
                   <a href="#" class="auth-link text-black">Esqueceu sua Senha ?</a>
                 </div>
                 <div class="my-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html">LOGIN</a>
+                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" onclick="verificaLogin()">LOGIN</a>
                 </div>
                 <!-- <div class="mb-2 d-flex">
                   <button type="button" class="btn btn-facebook auth-form-btn flex-grow mr-1">
@@ -72,7 +72,7 @@
                   </button>
                 </div> -->
                 <div class="text-center mt-4 font-weight-light">
-                  vo&ccedil;&circ; ainda não tem uma conta  <a href="register-2.html" class="text-primary">Crie uma.</a>
+                  vo&ccedil;&ecirc; ainda não tem uma conta  <a href="register-2.html" class="text-primary">Crie uma.</a>
                 </div>
               </form>
             </div>
@@ -87,6 +87,25 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
+  <script type="text/javascript">
+    function verificaLogin(){
+      var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "admin"; 
+        var password = "admin123";
+        if ((un == username) && (pw == password)) {
+          window.location.href = "dashboard.html";
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+            return false;
+        }
+    }
+    
+
+
+  </script>
+
   <!-- plugins:js -->
   <script src="vendors/base/vendor.bundle.base.js"></script>
   <!-- endinject -->
