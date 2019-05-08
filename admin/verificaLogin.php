@@ -6,7 +6,8 @@ error_reporting( error_reporting() & ~E_NOTICE );
 
 
  echo "<pre>";
-// var_dump($_GET);
+ var_dump($_POST);
+ exit('teste');
 
 if (isset($_POST['username']) && $_POST['username'] == 'admin')  {        
     session_start();
