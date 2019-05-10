@@ -56,7 +56,7 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="view/cadastroProduto.html">Produtos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="view/viewProduto.php">Produtos</a></li>
                 <li class="nav-item"> <a class="nav-link" href="">Ususario</a></li>
               </ul>
             </div>
@@ -380,7 +380,7 @@
                       </tbody>
                     </table>
                     <div>
-                      <button class="btn btn-success mt-2 mt-sm-0 right ">Adicionar Produto</button>
+                     <a href="viewCadProduto.php"> <button class="btn btn-success mt-2 mt-sm-0 right ">Adicionar Produto</button> </a>
                     </div>
                   </div>
                 </div>
