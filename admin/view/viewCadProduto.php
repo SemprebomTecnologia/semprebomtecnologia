@@ -104,8 +104,8 @@
             <div class="col-md-12  stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <p class="card-title">Tabela de Produtos</p>
-                  <div class="table-responsive" s >
+                  <p class="card-title">Cadastrar Produto</p>
+                  <div class="table-responsive"  >
 
 
                   </div>
